@@ -1,6 +1,10 @@
 body{
 background-color: red;
 text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 button{
@@ -26,4 +30,12 @@ button{
 .options{
     display: flex;
     justify-content: center;
+    border: 4px solid green;
+}
+
+p{
+    width: 20%;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
 }

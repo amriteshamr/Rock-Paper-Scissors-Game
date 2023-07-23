@@ -1,6 +1,7 @@
 <html>
     <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     </head>
     <body>
     <div class="header">
@@ -9,27 +10,25 @@
     </div>
     <div class="options">
     <div class="container">
-    <button class="btn" id="rock"></button>
+    <button class="btn" id="rock" onclick="rockMessage()"></button>
     <h3>ROCK</h3>
     </div>
     <div class="container">
-    <button class="btn" id="paper"></button>
+    <button class="btn" id="paper" onclick="paperMessage()"></button>
     <h3>PAPER</h3>
     </div>
     <div class="container">
-    <button class="btn" id="scissors"></button>
+    <button class="btn" id="scissors" onclick="scissorsMessage()"></button>
     <h3>SCISSORS</h3>
     </div>
     </div>
-
-
-
-
-
-
-
-
-
+    <p id="response">You selected </p>
+    <br>
+    <br>
+    <p id="opponent">CPU selected </p>
+    <br>
+    <br>
+    <p id="result">Result : </p>
 
 
 
