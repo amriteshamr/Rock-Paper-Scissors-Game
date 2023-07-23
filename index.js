@@ -50,3 +50,11 @@ document.getElementById("scissors").addEventListener("click", function(){
     setPlayerOption("scissors");
 });
 document.getElementById("playButton").addEventListener("click", playGame);
+document.getElementById("resetButton").addEventListener("click", () =>{
+    let player = document.getElementById("response");
+    let opponent = document.getElementById("opponent");
+    let result = document.getElementById("result");
+    player.textContent = "Player has selected";
+    opponent.textContent = "CPU has selected";
+    result.textContent = "";
+});
