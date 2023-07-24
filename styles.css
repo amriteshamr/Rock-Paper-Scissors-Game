@@ -45,15 +45,17 @@ button{
     transition: background 0.3s ease;
 }
 
-#rock{
+.rock-button{
     background-image: url(images/rock.png);
 }
 
-#paper{
+.paper-button{
     background-image: url(images/paper.png);
-}#scissors{
+}
+.scissors-button{
     background-image: url(images/scissors.png);
 }
+
 .options{
     display: flex;
     justify-content: center;

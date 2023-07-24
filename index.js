@@ -1,10 +1,18 @@
 let playerOption;
 let cpuOption;
+let isToggled = false;
 
 function setPlayerOption(option){
     let message = document.getElementById("response");
-    playerOption = option;
-    message.textContent = `Player has selected ${option}`
+    if (playerOption === option){
+        message.textContent = "You Selected _______";
+        playerOption = null;
+    }else{
+        playerOption = option;
+        message.textContent = `You have selected ${option}`
+    }
+    button.classList.toggle("selected");
+
 }
 
 
