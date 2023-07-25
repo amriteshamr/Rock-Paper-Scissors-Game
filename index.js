@@ -1,9 +1,10 @@
 let playerOption;
 let cpuOption;
-let isToggled = false;
+let hasPlayed = false;
 
 function setPlayerOption(option){
     let message = document.getElementById("response");
+    if (!hasPlayed){
     if (playerOption === option){
         message.textContent = "You Selected _______";
         playerOption = null;
@@ -11,9 +12,7 @@ function setPlayerOption(option){
         playerOption = option;
         message.textContent = `You have selected ${option}`
     }
-    button.classList.toggle("selected");
-
-}
+}}
 
 
 function playGame(){
@@ -34,6 +33,14 @@ function playGame(){
         else{
             result.textContent = "Its a tie !!"
         }
+        setTimeout(function() {
+            let player = document.getElementById("response");
+            let opponent = document.getElementById("opponent");
+            let result = document.getElementById("result");
+            player.textContent = "Player has selected";
+            opponent.textContent = "CPU has selected";
+            result.textContent = "";
+        }, 3000);
     }
     
 
